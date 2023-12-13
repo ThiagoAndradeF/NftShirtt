@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div class="logotipo">
+        <img src="assets/layout/images/cartsyLogo.png" alt="logo" style="width: 150px;">
+    </div>
+    <form >
+      <input type="text" pInputText [(ngModel)]="Email"  name="Email" placeholder="Email"/>
+      <p-password [(ngModel)]="Password"   name="Password" placeholder="Senha" [feedback]="false" [toggleMask]="true"></p-password>
+
+    </form>
+    <!-- <a href="/forgot-password">Forgot password?</a> -->
+    <div class="login">
+      <p-button label="Log in" (onClick)="logar()"></p-button>
+    </div>
+    <div *ngIf="senhaInvalida" class="invalid-login-animation">
+      <p style="color: red; margin-top: 10px; font-size: 15px;">
+        Login Inválido!
+      </p>
+    </div>
+
+    <div class="inscricao">
+      <p-button label="Sign up" class="button-resgistro" (onClick)="redirectCadastro()" ></p-button>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+zxing-scanner {
+  border: 2px solid #42A948; /* Cor da borda */
+  box-shadow: 0px 0px 12px #333; /* Sombra */
+  border-radius: 8px; /* Bordas arredondadas */
+  height: 50px;
+}
+.qr-code-found {
+  border: 2px solid #FF0000; /* Cor da borda quando o QR Code é encontrado */
+}
