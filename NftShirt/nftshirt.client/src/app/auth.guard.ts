@@ -10,7 +10,7 @@ export const AuthGuard: CanActivateFn = (route:ActivatedRouteSnapshot , state:Ro
     return false;
   }
 
-  if ((state.url.includes('/login') || state.url.includes('/cadastro')) && isLoggedIn) {
+  if ((state.url.includes('/login')) && isLoggedIn) {
     // Se já estiver logado, não permite acessar login ou cadastro
     return false;
   }

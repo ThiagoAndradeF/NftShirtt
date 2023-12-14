@@ -19,13 +19,13 @@ export class LoginService {
   public verificarAuth(){
     let rotaDeNavegacao =this.router.url
     if(localStorage.getItem('authToken')==='logado'   ){
-      if(rotaDeNavegacao === ('login' || 'cadastro')){
+      if(rotaDeNavegacao === ('login' || '')){
         this.router.navigate(['']);
       }
     }else{
       this.router.navigate(['/login']);
     }
   }
-  
+
 
 }
