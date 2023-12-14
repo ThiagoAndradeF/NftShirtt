@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
 
 
     constructor( public layoutService: LayoutService) {
-    }
+  }
 
     ngOnInit() {
     }
