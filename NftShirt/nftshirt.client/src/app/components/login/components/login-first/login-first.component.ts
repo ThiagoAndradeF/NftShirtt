@@ -1,5 +1,5 @@
-import { StoreService } from 'src/app/components/dashboard/shared/store.service';
-import { LoginService } from './shared/login.service';
+import { StoreService } from 'src/app/aplication/service/store.service';
+import { LoginService } from '../../../../aplication/service/login.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -59,10 +59,7 @@ export class LoginFirstComponent {
             this.router.navigate(['']);
           }, 1000);
         } else {
-          // Se a autenticação falhar, ative a animação de erro
           this.senhaInvalida = true;
-
-          // Remova a classe de animação após a duração para permitir futuras animações
           setTimeout(() => this.senhaInvalida = false, 500);
         }
       },
@@ -73,5 +70,13 @@ export class LoginFirstComponent {
       }
     );
   }
+  public logarFake(){
+    localStorage.setItem('authToken', 'logado');
+    localStorage.setItem('mailStore', this.Email);
+    setTimeout(() => {
+      this.router.navigate(['']);
+    }, 1000);
+  }
+
 
 }

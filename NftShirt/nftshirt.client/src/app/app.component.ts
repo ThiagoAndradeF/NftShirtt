@@ -1,4 +1,4 @@
-import { LoginService } from './components/login/components/login-first/shared/login.service';
+import { LoginService } from './aplication/service/login.service';
 import { Component } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 

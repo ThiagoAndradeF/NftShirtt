@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { StoreWithItemsDto } from '../models/storeWithItemsDto';
-import { ItemDto } from '../models/ItemDto';
-import { AdditionalServiceDto } from '../models/AdditionalServiceDto';
-import { OrderDto } from '../models/OrderDto';
+import { StoreWithItemsDto } from '../../components/dashboard/models/storeWithItemsDto';
+import { ItemDto } from '../../components/dashboard/models/ItemDto';
+import { AdditionalServiceDto } from '../../components/dashboard/models/AdditionalServiceDto';
+import { OrderDto } from '../../components/dashboard/models/OrderDto';
 
 @Injectable({
   providedIn: 'root'

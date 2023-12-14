@@ -1,6 +1,6 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { AdditionalServiceDto } from '../../models/AdditionalServiceDto';
-import { StoreService } from 'src/app/components/dashboard/shared/store.service';
+import { StoreService } from 'src/app/aplication/service/store.service';
 @Component({
     templateUrl: './inputdemo.component.html',
     styleUrls: ['./inputdemo.component.scss'],

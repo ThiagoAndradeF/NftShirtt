@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Product } from 'src/app/aplication/api/product';
 // import { ProductService } from 'src/app/aplication/service/product.service';
-import { StoreService } from '../../shared/store.service';
+import { StoreService } from '../../../../aplication/service/store.service';
 import { ItemDto } from '../../models/ItemDto';
 import { ConfirmationService, MessageService } from 'primeng/api';
 

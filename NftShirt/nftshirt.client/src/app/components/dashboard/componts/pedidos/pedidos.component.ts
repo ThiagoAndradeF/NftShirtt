@@ -1,6 +1,6 @@
 import { OrderDto } from './../../models/OrderDto';
 import { Component } from '@angular/core';
-import { StoreService } from '../../shared/store.service';
+import { StoreService } from '../../../../aplication/service/store.service';
 import { ItemDto } from '../../models/ItemDto';
 import { AdditionalServiceDto } from '../../models/AdditionalServiceDto';
 import { OrderFullDto } from '../../models/OrderFullDto';

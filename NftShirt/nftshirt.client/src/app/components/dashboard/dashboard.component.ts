@@ -1,8 +1,6 @@
-import { StoreService } from './shared/store.service';
+import { StoreService } from '../../aplication/service/store.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { Product } from '../../aplication/api/product';
-import { ProductService } from '../../aplication/service/product.service';
 import { Subscription } from 'rxjs';
 import { LayoutService } from 'src/app/layout/service/app.layout.service';
 import { Pedidos } from './models/pedido.model';
@@ -16,7 +14,6 @@ import { StoreWithItemsDto } from './models/storeWithItemsDto';
 
 export class DashboardComponent implements OnInit {
     emailLoja?: string;
-    products!: Product[];
     pedidos!: Pedidos[];
     chartData: any;
 
@@ -31,7 +28,7 @@ export class DashboardComponent implements OnInit {
 
 
 
-    constructor(private productService: ProductService, public layoutService: LayoutService, public pedidoService: PedidosService, private storeService:StoreService) {
+    constructor( public layoutService: LayoutService, public pedidoService: PedidosService, private storeService:StoreService) {
        this.chamarPedidos();
     }
 
