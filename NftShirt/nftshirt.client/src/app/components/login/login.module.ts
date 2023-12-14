@@ -9,7 +9,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { LoginService } from '../../aplication/service/login.service';
-import { StoreService } from '../../aplication/service/store.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { StoreService } from '../../aplication/service/store.service';
     InputTextModule,
     PasswordModule,
     ReactiveFormsModule
-    // ButtonDemoModule
 
 
   ],

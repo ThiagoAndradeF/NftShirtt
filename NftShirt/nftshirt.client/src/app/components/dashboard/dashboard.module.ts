@@ -10,10 +10,11 @@ import { StyleClassModule } from 'primeng/styleclass';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { DashboardsRoutingModule } from './dashboard-routing.module';
 import { DialogModule } from 'primeng/dialog';
-import { PedidosComponent } from './componts/pedidos/pedidos.component';
 import { KeyFilterModule } from 'primeng/keyfilter';
 import { DropdownModule } from 'primeng/dropdown';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { QrReaderComponent } from './componts/qr-reader/qr-reader.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 
 @NgModule({
@@ -30,9 +31,10 @@ import { MultiSelectModule } from 'primeng/multiselect';
         DialogModule,
         KeyFilterModule,
         DropdownModule,
-        MultiSelectModule
+        MultiSelectModule,
+        ZXingScannerModule
 
     ],
-    declarations: [DashboardComponent, PedidosComponent]
+    declarations: [DashboardComponent, QrReaderComponent]
 })
 export class DashboardModule { }
